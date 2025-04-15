@@ -1,4 +1,6 @@
 package com.ms.user.models.User.DTOs;
 
-public class UserCreationResponseDTO {
+import java.util.UUID;
+
+public record UserCreationResponseDTO(UUID id, String name, String email) {
 }

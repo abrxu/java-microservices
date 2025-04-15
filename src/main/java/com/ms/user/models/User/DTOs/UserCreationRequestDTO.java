@@ -1,4 +1,4 @@
 package com.ms.user.models.User.DTOs;
 
-public record UserCreationDTO() {
+public record UserCreationRequestDTO(String name, String email) {
 }
