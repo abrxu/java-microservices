@@ -1,9 +1,15 @@
 package com.ms.user.models.User;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
@@ -19,7 +25,5 @@ public class User {
         this.name = name;
         this.email = email;
     }
-
-    public User(){};
 
 }
